@@ -1,0 +1,29 @@
+def parallelTasks = [:]
+parallelTasks["Selenium_Test_AWS"]={
+    stage("Selenium_Test_AWS"){
+        stage("Executing On Online Node"){
+            if(Jenkins.instance.getNode('Win10Master').toComputer().isOnline()){
+                node('Win10Master'){
+                    println "Before :: Performance_AWS execution"
+		    build ' Selenium_Test_AWS '
+                    println "After :: Performance_AWS execution"
+                }
+            }
+        }
+    }
+}
+parallelTasks["Performance_AWS"]={
+    stage("Performance_AWS"){
+        stage("Executing On Online Node"){
+            if(Jenkins.instance.getNode('KousikNode').toComputer().isOnline()){
+                node('KousikNode'){
+                    println "Before :: Performance_AWS Execution"
+                    build ' Performance_AWS '
+                    println "After :: Performance_AWS Execution"
+                }
+            }
+        }
+    }
+}
+
+parallel parallelTasks

@@ -1,0 +1,107 @@
+﻿<html xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <div>
+    <div>
+      <head>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script><script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Test Result for suite'],
+          ['Total Passed Test Count::5', 5],
+          ['Total Failed Test Count::2', 2],
+          ['Total Skipped Test Count::0', 0]
+        ]);
+
+        var options = {
+          title: 'Test Result for suite',
+          pieHole: 0.4
+          //is3D: true
+        };
+
+        //var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        //var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+
+        chart.draw(data, options);
+      }
+    </script></head>
+    </div>
+    <div>
+      <body title="suite">
+        <table border="1" width="1100">
+          <tbody>
+            <tr>
+              <td>
+                <div><br><label for="TotalCount">Total Test Count::</label>7<br><label for="PassCount">Total Passed Test Count::</label>5<br><label for="FailCount">Total Failed Test Count::</label>2<br><label for="SkipCount">Total Skipped Test Count::</label>0</div>
+              </td>
+              <td>
+                <div id="donutchart" style="width: 900px; height: 500px;"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <p>
+            <table border="1" width="1100">
+              <thead>
+                <tr bgcolor="#9acd32">
+                  <td>Testmethod Name</td>
+                  <td>Finished at</td>
+                  <td>Started at</td>
+                  <td>status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>KOUSIK MANNA</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>PASS</td>
+                </tr>
+                <tr>
+                  <td>runOneColumn_1</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>PASS</td>
+                </tr>
+                <tr>
+                  <td>runDesktop_6336</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>PASS</td>
+                </tr>
+                <tr>
+                  <td>runOneColumn</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>FAIL</td>
+                </tr>
+                <tr>
+                  <td>runOneColumn2</td>
+                  <td>2018-02-17T16:34:24Z</td>
+                  <td>2018-02-17T16:34:24Z</td>
+                  <td>PASS</td>
+                </tr>
+                <tr>
+                  <td>runDesktop_6335</td>
+                  <td>2018-02-17T16:34:24Z</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>PASS</td>
+                </tr>
+                <tr>
+                  <td>runOneColumn</td>
+                  <td>2018-02-17T16:34:24Z</td>
+                  <td>2018-01-17T16:34:24Z</td>
+                  <td>FAIL</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+        </div>
+      </body>
+    </div>
+  </div>
+</html>

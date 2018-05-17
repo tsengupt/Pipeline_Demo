@@ -1,0 +1,23 @@
+<suite name="AIG_DEMO" TotalCount="7" PassCount="5" FailCount="2" SkipCount="0">
+  <class name="testscripts.scenario.Desktop_1">
+    <test-method name="KOUSIK MANNA" finished-at="2018-01-17T16:34:24Z" started-at="2018-01-17T16:34:24Z" status="PASS" />
+  </class>
+  <class name="testscripts.scenario.OneColumn_1">
+    <test-method name="runOneColumn_1" finished-at="2018-01-17T16:34:24Z" started-at="2018-01-17T16:34:24Z" status="PASS" />
+  </class>
+  <class name="testscripts.scenario.Desktop_6336">
+    <test-method name="runDesktop_6336" finished-at="2018-01-17T16:34:24Z" started-at="2018-01-17T16:34:24Z" status="PASS" />
+  </class>
+  <class name="testscripts.scenario.OneColumn">
+    <test-method name="runOneColumn" finished-at="2018-01-17T16:34:24Z" started-at="2018-01-17T16:34:24Z" status="FAIL" />
+  </class>
+  <class name="testscripts.scenario.OneColumn2">
+    <test-method name="runOneColumn2" finished-at="2018-02-17T16:34:24Z" started-at="2018-02-17T16:34:24Z" status="PASS" />
+  </class>
+  <class name="testscripts.scenario.Desktop_6335">
+    <test-method name="runDesktop_6335" finished-at="2018-02-17T16:34:24Z" started-at="2018-01-17T16:34:24Z" status="PASS" />
+  </class>
+  <class name="testscripts.scenario.OneColumn.runOneColumn">
+    <test-method name="runOneColumn" finished-at="2018-02-17T16:34:24Z" started-at="2018-01-17T16:34:24Z" status="FAIL" />
+  </class>
+</suite>

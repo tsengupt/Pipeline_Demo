@@ -1,11 +1,14 @@
 stage("Executing On Online Node"){
-            if(Jenkins.instance.getNode('KousikNode').toComputer().isOnline()){
-                node('KousikNode'){
-                    build 'PetClinic_AWS'
+            if(Jenkins.instance.getNode('AIG_Jenkins').toComputer().isOnline()){
+                node('AIG_Jenkins'){
+                    build 'PetClinic_build_and_UnitTest'
      build ' PetClinic_Sonarqube_AWS '
      build ' Selenium_Test_AWS '
      build ' Performance_AWS '
      build ' Deploy_Petclinic '
                 }
+            }
+            else{
+            build 'PetClinic_build_and_UnitTest'
             }
         }
